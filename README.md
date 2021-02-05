@@ -21,7 +21,9 @@ json-server --watch productsAPI/products.json
 ```
 
 # Now we are ready to start the project
-Note: We need to run the "npm run start" command in a new terminal.
 ```
 npm run start
 ```
+
+Note: We need to run the "npm run start" command in a new terminal.
+
