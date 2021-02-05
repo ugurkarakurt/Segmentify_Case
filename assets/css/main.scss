@@ -1,0 +1,175 @@
+// To avoid code repetition, I converted the centered to method.
+%centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// Hr element styling
+hr {
+    margin-top: 2.3rem;
+    border-top: 1px solid #8d8d8da6;
+}
+
+body {
+    background: #16222a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a6073, #16222a); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #3a6073,
+        #16222a
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: 5rem;
+}
+header {
+    //called the method
+    @extend %centered;
+    border-bottom: 1px solid #8d8d8da6;
+}
+main {
+    width: 100%;
+    margin-top: 2rem;
+    h5 {
+        font-family: "Roboto Slab", serif;
+        margin-bottom: 0;
+        @extend %centered;
+        font-size: 1.5rem;
+        color: #ffffff96;
+    }
+    .splide__slide {
+        border-radius: 5px;
+        position: relative;
+        padding: 0px;
+        margin: 15px;
+        margin-top: 2rem;
+        background-color: #ffffff;
+        width: 215px;
+        height: 400px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+        }
+        a {
+            padding: 0;
+            .image-wrapper {
+                padding: 10px;
+                @extend %centered;
+                width: 100%;
+                height: 200px;
+                img {
+                    height: 100%;
+                }
+            }
+            .product-detail {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                height: 200px;
+                .product-title {
+                    height: 80px;
+                    @extend %centered;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                    letter-spacing: 1px;
+                    color: #000000;
+                    margin-bottom: 0;
+                }
+                .category {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: 40px;
+                    p {
+                        color: #767676;
+                        text-align: center;
+                        font-size: 0.8rem;
+                        margin-bottom: 0;
+                    }
+                }
+                .price-container {
+                    @extend %centered;
+                    width: 100%;
+                    height: 40px;
+                    .product-price {
+                        color: #000000;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        &::after {
+                            content: "*";
+                        }
+                    }
+                    .product-old-price {
+                        color: #767676;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        &::after {
+                            content: "*";
+                        }
+                    }
+                }
+                .best-price {
+                    height: 40px;
+                    @extend %centered;
+                    width: 100%;
+                    span {
+                        color: #767676;
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+        .badges-wrapper {
+            position: absolute;
+            left: 0;
+            top: 15px;
+            width: 50px;
+            div {
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                width: 100%;
+                height: 30px;
+                margin-bottom: 5px;
+            }
+            .discount-badge {
+                font-family: "Roboto Slab", serif;
+                @extend %centered;
+                background-color: #b6141b;
+                span,
+                small {
+                    @extend %centered;
+                    color: #ffffff;
+                    font-weight: 400;
+                    height: 100%;
+                    font-size: 1.2rem;
+                }
+            }
+            .likeCount-badge {
+                background-color: #fafafa;
+                @extend %centered;
+                span,
+                small {
+                    @extend %centered;
+
+                    flex-direction: row;
+                    color: #994f88;
+                    font-weight: 400;
+                    height: 100%;
+                    font-size: 1rem;
+                }
+            }
+            .isNew-badge {
+                @extend %centered;
+                background-color: #252a2a;
+                span {
+                    @extend %centered;
+                    flex-direction: row;
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
