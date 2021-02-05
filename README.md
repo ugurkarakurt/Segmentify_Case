@@ -18,11 +18,11 @@ After the installations are successful, we need to run Json-server
 
 ```
 json-server --watch productsAPI/products.json 
-
-We run our project with the webpack dev server with the command. 
 ```
+We run our project with the webpack dev server with the command. 
 
-###### Now we are ready to start the project
+
+# Now we are ready to start the project
 
 ```
 npm run start
