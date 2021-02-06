@@ -2,13 +2,14 @@
 import UI from "./ui";
 import Request from "./request";
 
-const productsDataURL = "http://localhost:3000/products"
+const productsDataURL = "../productsAPI/products.json"
 
 //send a get request with the request method from the request file.
 //created a sync structure with .then.
 Request.get(productsDataURL).then(data => {
+    console.log(data.products);
     //send the incoming data as a parameter to the ui function to use.
-    UI.getProductsToUI(data)
+    UI.getProductsToUI(data.products)
 }).then(() => {
     //use queryselectorAll method to use slider library everywhere at once.
     const productWrappers = document.querySelectorAll(".product-wrapper")
