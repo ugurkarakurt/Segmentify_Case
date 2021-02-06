@@ -11,7 +11,7 @@ Request.get(productsDataURL).then(data => {
     UI.getProductsToUI(data)
 }).then(() => {
     //use queryselectorAll method to use slider library everywhere at once.
-    let productWrappers = document.querySelectorAll(".product-wrapper")
+    const productWrappers = document.querySelectorAll(".product-wrapper")
 
     productWrappers.forEach(productWrapper => {
         $(productWrapper).slick({

@@ -2,7 +2,7 @@
 
 export default class UI {
     static getProductsToUI(products) {
-        products.map(product => {
+        products.forEach(product => {
             //percentage calculation
             const percent = (Math.round(((product.oldPrice - product.price) / product.price) * 100));
             //use queryselectorAll method to use slider library everywhere at once.

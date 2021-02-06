@@ -6,7 +6,7 @@ export default class Request {
     static async get(url) {
 
         const response = await fetch(url);
-        const responseData = await response.json();
+        const responseData = response.json();
 
         return responseData;
 
