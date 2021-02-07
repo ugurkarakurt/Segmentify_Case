@@ -25,3 +25,4 @@ npm run start
 
 Note: We need to run the "npm run start" command in a new terminal.
 
+### Visit this project -> - [Segmentify_Case](https://ugurkarakurt.github.io/Segmentify_Case_GithubPage/).
