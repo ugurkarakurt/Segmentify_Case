@@ -3,7 +3,7 @@
 - [Webpack - Webpack DevServer](https://webpack.js.org/configuration/dev-server/).
 - [Babel](https://babeljs.io/).
 
-Visit this project -> - [](https://ugurkarakurt.github.io/Segmentify_Case_GithubPage/).
+Visit this project -> - [Segmentify_Case](https://ugurkarakurt.github.io/Segmentify_Case_GithubPage/).
 
 # Getting started
 
