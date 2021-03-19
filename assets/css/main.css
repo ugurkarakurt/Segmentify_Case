@@ -132,8 +132,4 @@ main {
           font-weight: bold;
           font-size: 0.9rem; }
 
-@media only screen and (max-width: 480px) {
-  main h5 {
-    font-size: 1.2rem; } }
-
 /*# sourceMappingURL=main.css.map */
